@@ -2,7 +2,7 @@ import React from "react";
 import { FlatList, StyleSheet } from "react-native";
 import CardProfile from "../../components/Cards/cardProfile";
 import { DATA } from '../../data/usersData';
-import { SafeAreaView } from "react-native-safe-area-context";
+
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         keyExtractor={(item) => item.id.toString()}
         contentContainerStyle={styles.flatListContent}
       />
+      
 
   );
 }
